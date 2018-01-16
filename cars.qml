@@ -14,7 +14,7 @@ function createCars() {
 	var cars = [
 	{ 'name': "golf V",
   	  'w': 176,
-	  'h': 425,
+			'h': 425,
 	  'color': "green"
 	},
 	{ 'name': "meriva b",
@@ -38,8 +38,18 @@ function createCars() {
 	  'color': "blue"
 	},
 	{ 'name': "c4 picasso",
-	  'w': 183,
-       	  'h': 447,
+			'w': 212,
+      'h': 444,
+			'color': "blue"
+	},
+	{ 'name': "ix20",
+			'w': 177,
+      'h': 410,
+			'color': "white"
+	},
+	{ 'name': "garage",
+			'w': 274,
+      'h': 600,
 	  'color': "grey"
 	}
 	]
@@ -50,15 +60,15 @@ for (var i=0; i<cars.length; i++) {
 	var width = cars[i]['w']
 	var x = (width + 70)*i
 	x = 0
-	var str = 
-	    ' import QtQuick 2.0; ' + 
+	var str =
+	    ' import QtQuick 2.0; ' +
 	    ' Rectangle { ' +
-		    ' id: rect; ' + 	 
+		    ' id: rect; ' +
 		    ' color: "' + cars[i]['color'] + '"; ' +
 		    ' x: ' + x + '; width: ' + width + '; height: ' + height + '; ' +
 		    ' radius: 15; opacity: 0.5; ' +
 		    ' Drag.active: mouseArea.drag.active; ' +
-		    ' Text { anchors.centerIn : parent; text: "' + cars[i]['name'] + "\n"+ cars[i]['w'] + "x" + cars[i]['h'] + " " +'"} ' + 
+		    ' Text { anchors.centerIn : parent; text: "' + cars[i]['name'] + "\n"+ cars[i]['w'] + "x" + cars[i]['h'] + " " +'"} ' +
 		    ' MouseArea { ' +
 		    '    id: mouseArea; ' +
 		    '    anchors.fill: parent; ' +
@@ -70,7 +80,7 @@ for (var i=0; i<cars.length; i++) {
                                    "dynamicSnippet1");
 
 	var component = Qt.createComponent(newObject)
- 
+
     if (component.status == Component.Ready)
         finishCreation();
     else
