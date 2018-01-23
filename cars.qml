@@ -13,34 +13,39 @@ function createCars() {
 
 	var cars = [
 	{ 'name': "golf V",
-  	  'w': 176,
-			'h': 425,
+  	'w': 176,
+		'h': 425,
 	  'color': "green"
 	},
 	{ 'name': "meriva b",
 	  'w': 181,
-       	  'h': 429,
+    'h': 429,
 	  'color': "blue"
 	},
 	{ 'name': "classe b",
 	  'w': 178,
-       	  'h': 427,
+    'h': 427,
 	  'color': "grey"
 	},
 	{ 'name': "spacestar",
 	  'w': 172,
-       	  'h': 405,
+    'h': 405,
 	  'color': "cyan"
 	},
 	{ 'name': "verso-s",
 	  'w': 170,
-       	  'h': 399,
+    'h': 399,
 	  'color': "blue"
 	},
 	{ 'name': "c4 picasso",
 			'w': 212,
       'h': 444,
 			'color': "blue"
+	},
+	{ 'name': "ix20",
+			'w': 207,
+      'h': 438,
+			'color': "red"
 	},
 	{ 'name': "ix20",
 			'w': 177,
