@@ -42,7 +42,7 @@ function createCars() {
       'h': 444,
 			'color': "blue"
 	},
-	{ 'name': "ix20",
+	{ 'name': "c-max",
 			'w': 207,
       'h': 438,
 			'color': "red"
